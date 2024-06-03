@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f5a623, #f76b1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+#initial-screen, #quiz-container, #summary-container {
+    background: #ffffff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    color: #333333;
+    transition: transform 0.3s;
+}
+
+#initial-screen:hover, #quiz-container:hover, #summary-container:hover {
+    transform: scale(1.02);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+    transform: scale(1.05);
+}
+
+#question-text {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+}
+
+#options-container {
+    margin-bottom: 25px;
+}
+
+#options-container label {
+    display: block;
+    background: #f8f9fa;
+    color: #333333;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#options-container label:hover {
+    background: #d1d8e0;
+    transform: translateX(5px);
+}
+
+#options-container input {
+    margin-right: 10px;
+}
+
+#score-display, #timer-display {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#summary-container h1 {
+    margin-bottom: 25px;
+}
+
+#summary-container p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
